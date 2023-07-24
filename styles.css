@@ -1,0 +1,191 @@
+:root{
+    --primarycolor: #C3EDC0;
+    --secondarycolor: #1A5D1A;
+    --therdrycolor:#FA7070;
+    --lightcolor: #fff;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+html{
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'El Messiri', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primarycolor);
+    max-width: 1366px;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+nav .logo{
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+
+nav .logo h4{
+    font-size:1.5rem;
+}
+
+nav .nav-items{
+   display: flex;
+   list-style-type: none;
+}
+
+nav .nav-items .nav-item{
+    padding: 0 1rem;
+}
+
+nav .nav-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--secondarycolor);
+    transition: 0.4s;
+}
+
+nav .nav-link:hover{
+    color: var(--therdrycolor);
+
+}
+
+.btn{
+    background-color: var(--lightcolor);
+    color: var(--secondarycolor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+}
+
+/* hero */
+.hero{
+    background-image: url(img/follow\ me.jpg);
+    background-repeat: no-repeat;
+ 
+}
+
+.hero-section{
+    max-width:1366px ;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.hero-section .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section h4{
+    background-color: #f0efef;
+    color: var(--therdrycolor);
+    font-size: 1.6rem;
+}
+
+.hero-section .content h1{
+    background-color: #f0efef;
+    font-size: 2.6rem;
+}
+
+.hero-section p{
+    background-color: #f0efef;
+    color: black;
+    font-size: 1.4rem;
+}
+
+/* gifts */
+
+.container {
+    width: 1180px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    gap: 35px;
+}
+
+.container h4{
+    color: var(--therdrycolor);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.gifts {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+    gap: 17.5px;
+}
+
+.gifts img {
+    width: 100%;
+}
+
+.gifts img:hover {
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+.gifts h2 {
+    font-size: 20px;
+}
+
+.gifts p {
+    padding: 0 20px;
+    font-size: 12.5px;
+    line-height: 1.35;
+    color: var(--gray-color);
+}
+
+.gifts span {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.gifts .options {
+    margin-bottom: 25px;
+}
+
+.gifts .options a {
+    color: white;
+    background-color: #00b5d5;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+.gifts .options a:hover {
+    background-color: #0077b5;
+}

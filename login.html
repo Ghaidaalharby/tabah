@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tabah Login & Signup</title>
+    <link rel="stylesheet" href="./stylelogin.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav>
+      <div class="logo">
+          <img id="logo" src="img/logo.png" height="70" width="60">
+          <h4>طابة</h4>
+      </div>
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="./i.html" class="nav-link">الصفحة الرئيسية</a>
+      </li>
+      <li class="nav-item">
+          <a href="./gifts.html" class="nav-link">هدايا</a>
+      </li>
+      <li class="nav-item">
+          <a href="./travel.html" class="nav-link">رحلات</a>
+      </li>
+      <li class="nav-item">
+          <a href="./historical places.html" class="nav-link">أماكن تاريخية</a>
+      </li>
+      <li class="nav-item">
+          <a href="./Contact Us.html" class="nav-link">تواصل معنا</a>
+      </li>
+  </ul>
+  <a href="./login.html" class="btn">تسجيل الدخول</a>
+  </div>
+  </nav>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>إنشاء حساب</header>
+        <form action="#">
+          <input type="text" placeholder="الاسم " required />
+          <input type="text" placeholder="الايميل" required />
+          <input type="password" placeholder="كلمة المرور" required />
+          <input type="submit" value="إنشاء حساب" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>تسجيل الدخول</header>
+        <form action="#">
+          <input type="text" placeholder="الايميل" required />
+          <input type="password" placeholder="كلمة المرور" required />
+          <a href="#">هل نسيت كلمة المرور؟</a>
+          <input type="submit" value="تسجيل الدخول" />
+        </form>
+      </div>
+
+      <script>
+        const wrapper = document.querySelector(".wrapper"),
+          signupHeader = document.querySelector(".signup header"),
+          loginHeader = document.querySelector(".login header");
+
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+          wrapper.classList.remove("active");
+        });
+      </script>
+    </section>
+  </body>
+</html>
